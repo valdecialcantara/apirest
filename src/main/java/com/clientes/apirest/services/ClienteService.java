@@ -11,6 +11,8 @@ public interface ClienteService {
 	
 	Optional<Cliente> listarProId(Long id);
 	
+	List<Cliente> listarPorNome(String nome);
+	
 	Cliente cadastrar(Cliente cliente);
 	
 	Cliente atualizar(Cliente cliente);

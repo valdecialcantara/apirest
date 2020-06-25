@@ -40,4 +40,14 @@ public class CidadeServiceImpl implements CidadeService {
 	public void remover(Long id) {
 		this.cidadeRepository.deleteById(id);
 	}
+
+	@Override
+	public List<Cidade> listarPorNome(String nome) {
+		return this.cidadeRepository.findByNomeContainingIgnoreCase(nome);
+	}
+
+	@Override
+	public List<Cidade> listarPorEstado(String estado) {
+		return this.cidadeRepository.findByEstado(estado);
+	}
 }

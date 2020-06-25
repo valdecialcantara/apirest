@@ -11,6 +11,10 @@ public interface CidadeService {
 	
 	Optional<Cidade> listarProId(Long id);
 	
+	List<Cidade> listarPorNome(String nome);
+	
+	List<Cidade> listarPorEstado(String estado);
+	
 	Cidade cadastrar(Cidade cidade);
 	
 	Cidade atualizar(Cidade cidade);

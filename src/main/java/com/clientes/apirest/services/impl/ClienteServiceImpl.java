@@ -27,6 +27,11 @@ public class ClienteServiceImpl implements ClienteService {
 	}
 
 	@Override
+	public List<Cliente> listarPorNome(String nome) {
+		return this.clienteRepository.findByNomeContainingIgnoreCase(nome);
+	}
+	
+	@Override
 	public Cliente cadastrar(Cliente cliente) {
 		return this.clienteRepository.save(cliente);
 	}
