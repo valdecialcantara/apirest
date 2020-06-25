@@ -30,7 +30,7 @@ Browse
 
 h2 web ui http://localhost:8080/h2
 
-URL for end-points
+URL para end-points
 
 http://localhost:8080/cidades
 
