@@ -4,8 +4,11 @@ Esta api usa banco de dados H2 em memória para manter clientes e cidades.
 Application.properties
 
 spring.datasource.url=jdbc:h2:file:~/clientedb
+
 spring.datasource.driverClassName=org.h2.Driver
+
 spring.datasource.username=sa
+
 spring.datasource.password=
 
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
